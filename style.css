@@ -1,0 +1,147 @@
+@font-face {
+  font-family: Nimbus San L;
+  src: url(./Assets/font/NimbusSanL-Reg.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Nimbus San L;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+}
+
+#home {
+  width: 100vw;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 3vw 10vw;
+}
+
+.nleft {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav .ncenter {
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15vw;
+  padding: 0vw 10vw;
+}
+
+#sustain {
+  width: 10vw;
+}
+
+#sustain p {
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 800;
+  margin: 10px 0;
+  opacity: 0.5;
+}
+
+#sustain #susimagewrapper {
+  position: relative;
+  width: 100%;
+  height: 15vw;
+  overflow: hidden;
+}
+
+#susimagewrapper img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140%;
+  height: 140%;
+  object-fit: cover;
+}
+
+#ephemeral {
+  position: relative;
+  width: 30vw;
+  height: 42vw;
+}
+
+#ephemeral img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#ephemeral p{
+  position: absolute;
+  font-size: 1.25vw;
+  letter-spacing: -.07vw;
+  line-height: 1.3;
+  width: 40%;
+  top: 105%;
+}
+
+#ephemeral .heading{
+position: absolute;
+top: -22%;
+left: -20%;
+}
+
+#ephemeral h1{
+  font-size: 6vw;
+  font-weight: 400;
+  letter-spacing: -.4vw;
+  line-height: 1;
+}
+
+#visit{
+display: flex;
+gap: 10px;
+align-items: center;
+}
+
+.circlev{
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #5e5e5e;
+}
+
+.circlev i{
+  color: #5e5e5e;
+}
+
+#visit h3{
+  font-weight: 400;
+  color: #5e5e5e;
+}
