@@ -90,44 +90,48 @@ body {
 #ephemeral {
   position: relative;
   width: 30vw;
-  height: 42vw;
+  min-height: 42vw;
 }
 
-#ephemeral img{
+#imgntext {
+  width: fit-content;
+  height: fit-content;
+}
+
+#ephemeral img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-#ephemeral p{
-  position: absolute;
+#ephemeral p {
   font-size: 1.25vw;
-  letter-spacing: -.07vw;
+  letter-spacing: -0.07vw;
   line-height: 1.3;
   width: 40%;
-  top: 105%;
+  margin-top: 30px;
 }
 
-#ephemeral .heading{
-position: absolute;
-top: -22%;
-left: -20%;
+#ephemeral .heading {
+  position: absolute;
+  top: -22%;
+  left: -20%;
 }
 
-#ephemeral h1{
+#ephemeral h1 {
   font-size: 6vw;
   font-weight: 400;
-  letter-spacing: -.4vw;
+  letter-spacing: -0.4vw;
   line-height: 1;
 }
 
-#visit{
-display: flex;
-gap: 10px;
-align-items: center;
+#visit {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
-.circlev{
+.circlev {
   width: 3vw;
   height: 3vw;
   display: flex;
@@ -137,11 +141,200 @@ align-items: center;
   border: 1px solid #5e5e5e;
 }
 
-.circlev i{
+.circlev i {
   color: #5e5e5e;
 }
 
-#visit h3{
+#visit h3 {
   font-weight: 400;
   color: #5e5e5e;
+}
+
+#motive {
+  position: relative;
+  right: 0;
+  padding: 3vw 10vw;
+  margin-top: 7vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#motive p {
+  line-height: 1.5;
+  font-weight: 600;
+  width: 80%;
+  text-align: right;
+  font-size: 2.1vw;
+}
+
+#motive span {
+  display: inline-block;
+  border-radius: 100px;
+  margin: 0 13px;
+  margin-bottom: -12.5px;
+}
+
+#onespan {
+  width: 80px;
+  height: 50px;
+  background-image: url(./Assets/images/bluegirl.jpg);
+  background-size: cover;
+  background-position: 0% 60%;
+}
+
+#twospan {
+  width: 130px;
+  height: 60px;
+  background-image: url(./Assets/images/shaljam.jpg);
+  background-size: cover;
+  background-position: 0% 48%;
+}
+
+#threespan {
+  width: 80px;
+  height: 50px;
+  background-image: url(./Assets/images/grass.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#picture {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8vw;
+  padding: 3vw;
+  padding-left: 14vw;
+  padding-right: 12vw;
+}
+
+#firstpic {
+  width: 17vw;
+}
+
+#firstpic #picimg {
+  width: 100%;
+  height: 24vw;
+  margin-bottom: 1vw;
+}
+
+#picimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#firstpic h1,
+#secpic h1 {
+  letter-spacing: -0.1vw;
+  font-weight: 100;
+  font-size: 2vw;
+}
+
+#firstpic p,
+#secpic p {
+  opacity: 0.8;
+  font-size: 1vw;
+  letter-spacing: -0.07vw;
+  line-height: 1;
+  margin-top: 10px;
+}
+
+#secpic {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 25vw;
+}
+
+#secpic #picimg {
+  width: 100%;
+  height: 37vw;
+  margin-bottom: 1vw;
+}
+
+#secpic p {
+  width: 50%;
+  text-align: right;
+}
+
+#banner {
+  width: 100%;
+  margin-top: 8vw;
+  display: flex;
+  align-items: center;
+}
+
+#bimg {
+  width: 65%;
+  height: 60vh;
+}
+
+#bimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 70%;
+}
+
+#btext {
+  width: 35%;
+  padding: 0 3vw;
+}
+
+#btext h1 {
+  font-size: 2.8vw;
+  font-weight: 400;
+  letter-spacing: -0.15vw;
+  line-height: 1;
+}
+
+#btext p {
+  margin-top: 20px;
+  width: 60%;
+  font-size: 1vw;
+}
+
+#future {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#future video {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+  opacity: 1;
+}
+
+#ftext{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 11;
+  background-color: #fff;
+  padding: 1vw 2vw;
+  border-radius: 10px;
+}
+
+#ftext button{
+  padding: .8vw 1.7vw;
+  font-size: .6vw;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 10px;
+  border-radius: 100px;
+  background-color: #fff;
+  border: 1px solid #5e5e5e;
+  color: #6f6f6f;
+  cursor: pointer;
 }
