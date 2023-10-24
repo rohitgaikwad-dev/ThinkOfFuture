@@ -14,8 +14,8 @@ gsap.from(".nlink", {
 Shery.textAnimate(".heading h1", {
   style: 2,
   y: 10,
-  delay: 0.7,
-  duration: 2,
+  delay: 2,
+  duration: 4,
   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
   multiplier: 0.1,
 });
@@ -122,17 +122,17 @@ Shery.imageEffect("#bimg", {
 });
 
 document.querySelector("#future button").addEventListener("mouseover", () => {
-    gsap.to("#future video",{
-        opacity: 1,
-        duration: 1,
-        ease: Power4,
-    })
-})
+  gsap.to("#future video", {
+    opacity: 1,
+    duration: 1,
+    ease: Power4,
+  });
+});
 
 document.querySelector("#future button").addEventListener("mouseleave", () => {
-    gsap.to("#future video",{
-        opacity: 0,
-        duration: 1,
-        ease: Power4,
-    })
-})
+  gsap.to("#future video", {
+    opacity: 0,
+    duration: 1,
+    ease: Power4,
+  });
+});
